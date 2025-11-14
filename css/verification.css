@@ -38,15 +38,13 @@
 /* Keyboard section */
 @media (min-width: 768px) {
   body {
-    /* padding: 0; */
     height: 100vh;
   }
   .keyboard_section {
     display: none;
   }
   .code_section {
-    /* height: 100vh; */
-
+    height: 100vh;
     height: 585px;
     background-image: url("/img/chat-bg.png");
     background-size: cover;
