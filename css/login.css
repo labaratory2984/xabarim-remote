@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("/img/chat-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+.login__box {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: rgb(13, 109, 252);
+  padding: 10px;
+}
+.form__input {
+  margin-top: 2px;
+  outline: none;
+  background-color: #212121;
+}
+.button {
+  background-color: blue;
+  border: 1px solid blue;
+  border-radius: 8px;
+  padding: 6px;
+  color: aliceblue;
+}
+.input__box {
+  margin-top: 5px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  color: rgb(13, 109, 252);
+  padding-top: 10px;
+}
+@media (max-width: 767.9px) {
+  footer p {
+    text-align: center;
+  }
+}

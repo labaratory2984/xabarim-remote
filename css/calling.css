@@ -1,0 +1,175 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  height: 500px;
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(39, 45, 45);
+  border: 1px solid rgb(39, 45, 45);
+  border-radius: 8px;
+}
+.col-6 {
+  height: 100%;
+  width: 70%;
+  border: 1px solid rgb(185, 169, 169);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: wheat;
+}
+.camera {
+  height: auto;
+  width: auto;
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.col-3 {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profile__img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.desc p {
+  font-size: 24px;
+  text-align: center;
+  color: wheat;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.desc button {
+  margin-top: 10px;
+  height: 40px;
+  width: 160px;
+  background-color: blue;
+  color: wheat;
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+}
+.desc button:hover {
+  background-color: rgb(10, 45, 241);
+}
+.desc button:active {
+  background-color: rgb(18, 3, 33);
+  color: blue;
+  animation-name: scale;
+  animation-duration: 2s;
+}
+@keyframes scale {
+  25% {
+    transform: scale(1.025);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  75% {
+    transform: scale(1.075);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+/* Calling window */
+.calling__window {
+  height: 300px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.calling__window h3 {
+  text-align: center;
+  color: wheat;
+  margin: 10px;
+}
+.calling__window img {
+  max-width: 100%;
+  height: auto;
+}
+.btns {
+  display: flex;
+  width: 350px;
+  gap: 40px;
+  justify-content: center;
+  /* border: 1px solid gray; */
+  padding: 10px;
+}
+.btn {
+  border: 1px solid darkgray;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+  background-color: rgb(125, 134, 141);
+}
+
+.btn i {
+  cursor: no-drop;
+  font-size: large;
+}
+.btn:last-child {
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+  background-color: red;
+}
+.btn:last-child {
+  transform: rotate(136deg);
+}
+#hang__off,
+#hang__off i {
+  cursor: pointer;
+}
+#hang__off:active {
+  transform: scale(1.1) rotate(136deg);
+}
+.show {
+  display: block;
+}
+.show__window {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  display: none;
+}

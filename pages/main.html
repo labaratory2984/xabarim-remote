@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>XabarimUz</title>
+    <link rel="icon" href="/img/logo-main.jpg" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/chats.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="p-0 m-0">
+    <header class="px-3 bg bg-dark">
+      <nav>
+        <div class="nav__box">
+          <div class="logo">
+            <h2 class="logo__title">Xabarim</h2>
+          </div>
+          <div class="links">
+            <a
+              href="/pages/login.html"
+              class="border border-primary p-1 rounded text-danger"
+              >Logout</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="bg bg-dark" style="height: 534px">
+      <div class="container-fluid p-1">
+        <div class="row m-0" style="gap: 6px">
+          <div class="col-2">
+            <!-- should be hide -->
+            <button class="button-right" id="all">
+              <i class="mx-1 text-dark bi bi-chat-text-fill"></i>All Followers
+            </button>
+            <button class="button-right" id="private">
+              <i class="mx-1 text-dark bi bi-envelope-at-fill"></i>
+              Private Chats
+            </button>
+            <button class="button-right" id="my-profile">
+              <i class="mx-1 text-dark bi bi-person-circle"></i>
+              My profile
+            </button>
+            <!-- Contacts side -->
+            <div class="contact__case rounded mt-1">
+              <h4 class="p-1 fw-bolder">All Followers</h4>
+              <div class="contacts mt-1">
+                <div class="person-profile">
+                  <img
+                    src="/img/profile.jpg"
+                    alt="rasm joq"
+                    class="profile__img"
+                  />
+                  <div>
+                    <h6 class="profile__name my-0">Daniel Dick</h6>
+                    <span class="text-primary my-0">Online</span>
+                  </div>
+                </div>
+                <div class="person-profile">
+                  <img
+                    src="/img/profile 4.png"
+                    alt="rasm joq"
+                    class="profile__img"
+                  />
+                  <div>
+                    <h6 class="profile__name my-0">Ramz Coder</h6>
+                    <span class="text-primary my-0">Online</span>
+                  </div>
+                </div>
+                <div class="person-profile">
+                  <img
+                    src="/img/profile.jpg"
+                    alt="rasm joq"
+                    class="profile__img"
+                  />
+                  <div>
+                    <h6 class="profile__name my-0">Jah Khabib</h6>
+                    <span class="text-primary my-0">Online</span>
+                  </div>
+                </div>
+                <div class="person-profile">
+                  <img
+                    src="/img/profile.jpg"
+                    alt="rasm joq"
+                    class="profile__img"
+                  />
+                  <div>
+                    <h6 class="profile__name my-0">Jah Khabib</h6>
+                    <span class="text-primary my-0">Online</span>
+                  </div>
+                </div>
+                <div class="person-profile">
+                  <img
+                    src="/img/profile 2.jpg"
+                    alt="rasm joq"
+                    class="profile__img"
+                  />
+                  <div>
+                    <h6 class="profile__name my-0">Mosh Hamedii</h6>
+                    <span class="text-primary my-0">Online</span>
+                  </div>
+                </div>
+                <div class="person-profile">
+                  <img
+                    src="/img/profile 4.png"
+                    alt="rasm joq"
+                    class="profile__img"
+                  />
+                  <div>
+                    <h6 class="profile__name my-0">Linkoln Siller</h6>
+                    <span class="text-primary my-0">Online</span>
+                  </div>
+                </div>
+                <div class="person-profile">
+                  <img
+                    src="/img/profile.jpg"
+                    alt="rasm joq"
+                    class="profile__img"
+                  />
+                  <div>
+                    <h6 class="profile__name my-0">Jah Khabib</h6>
+                    <span class="text-primary my-0">Online</span>
+                  </div>
+                </div>
+                <div class="person-profile">
+                  <img
+                    src="/img/profile 3.jpg"
+                    alt="rasm joq"
+                    class="profile__img"
+                  />
+                  <div>
+                    <h6 class="profile__name my-0">Rock Hill</h6>
+                    <span class="text-primary my-0">Online</span>
+                  </div>
+                </div>
+                <div class="person-profile">
+                  <img
+                    src="/img/profile 2.jpg"
+                    alt="rasm joq"
+                    class="profile__img"
+                  />
+                  <div>
+                    <h6 class="profile__name my-0">John Leps</h6>
+                    <span class="text-primary my-0">Online</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Contacts side -->
+          </div>
+          <!-- Chat Side -->
+          <div class="col-12 col-md-6 message__box">
+            <div class="all__msgs show red">
+              <div class="header__msg d-flex">
+                <img
+                  src="/img/notif_img.jpg"
+                  alt="profile img"
+                  id="chat-profile__img"
+                  class="img-fluid rounded-circle profile"
+                  style="height: 60px; width: 60px; margin: 10px"
+                />
+                <div
+                  class="d-flex justify-content-between align-items-center"
+                  style="width: 568px"
+                >
+                  <div class="d-flex flex-column w-100 profile">
+                    <h6
+                      class="d-flex flex-column fs-4 text-white w-100 h-100"
+                      style="margin-bottom: 0"
+                    >
+                      User
+                    </h6>
+                    <span>last seen 8:12</span>
+                  </div>
+                  <div class="d-flex px-4">
+                    <a
+                      class="mx-2 hide"
+                      style="text-decoration: none"
+                      href="/pages/calling.html"
+                      target="_blank"
+                    >
+                      <i class="bi bi-telephone-fill"></i>
+                    </a>
+                    <div>
+                      <i class="bi bi-x-circle hide"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-list" id="menu-chat"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-100 d-flex flex-column messages-case position-relative"
+              >
+                <!-- ss -->
+                <div
+                  class="alert alert-success alert-dismissible fade w-90 align-self-center mt-5"
+                  role="alert"
+                  style="z-index: 200; position: absolute; bottom: 30px"
+                >
+                  <strong>Chat cleared</strong> History is cleared and never
+                  backup.
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <!-- /ss -->
+                <div class="messages">
+                  <span class="text-center text-white">
+                    17-september, 2025
+                  </span>
+                  <div class="d-flex align-items-center incoming__message">
+                    <img
+                      src="/img/notif_img.jpg"
+                      alt="hero"
+                      class="avatar"
+                      style="border-radius: 50%; height: 30px; width: 30px"
+                    />
+                    <div class="incoming__message-pocket">
+                      <div>Assalomu alaykum, yaxshimisiz ?</div>
+                      <span class="time"></span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center incoming__message">
+                    <img
+                      src="/img/notif_img.jpg"
+                      alt="hero"
+                      class="avatar"
+                      style="border-radius: 50%; height: 30px; width: 30px"
+                    />
+                    <div class="incoming__message-pocket">
+                      <div>Messenger publish bo'lganmi?</div>
+                      <span class="time"> </span>
+                    </div>
+                  </div>
+                  <!-- RESPONDING: -->
+                  <div class="d-flex align-items-center responding__message">
+                    <div class="responding__message-pocket">
+                      <div>Vaalekum assalom, yaxshimisan?</div>
+                      <span class="time"></span>
+                    </div>
+                    <img
+                      src="/img/profile.jpg"
+                      alt="hero"
+                      class="avatar"
+                      style="border-radius: 50%; height: 30px; width: 30px"
+                    />
+                  </div>
+                  <div class="d-flex align-items-center responding__message">
+                    <div class="responding__message-pocket">
+                      <div>
+                        Yo'q men hamma narsa qoshilgandan keyin publish qilaman.
+                        right?
+                      </div>
+                      <span class="time"></span>
+                    </div>
+                    <img
+                      src="/img/profile.jpg"
+                      alt="hero"
+                      class="avatar"
+                      style="border-radius: 50%; height: 30px; width: 30px"
+                    />
+                  </div>
+                  <span class="text-center text-white">
+                    21-september, 2025
+                  </span>
+                  <div class="d-flex align-items-center incoming__message">
+                    <img
+                      src="/img/notif_img.jpg"
+                      alt="hero"
+                      class="avatar"
+                      style="border-radius: 50%; height: 30px; width: 30px"
+                    />
+                    <div class="incoming__message-pocket">
+                      <div>Assalomu alaykum, yangi kun- yangi ixtirolar.</div>
+                      <span class="time"></span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center incoming__message">
+                    <img
+                      src="/img/notif_img.jpg"
+                      alt="hero"
+                      class="avatar"
+                      style="border-radius: 50%; height: 30px; width: 30px"
+                    />
+                    <div class="incoming__message-pocket">
+                      <div>
+                        <span class="text-dark">Muommo</span> : Hal qilindi
+                        [block connection]
+                      </div>
+                      <span class="time"></span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="row bg bg-dark input__case">
+                    <div class="col-9">
+                      <input
+                        type="text"
+                        name="text"
+                        class="form-control"
+                        placeholder="Type message"
+                        autofocus
+                        id="input_msg"
+                        autocomplete="off"
+                      />
+                    </div>
+                    <div class="col-3">
+                      <div class="tools">
+                        <i class="bi bi-emoji-smile"></i>
+                        <i class="bi bi-mic-fill"></i>
+                        <i class="bi bi-send" id="send-button"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Profile case -->
+            <div class="profile-section w-100 h-100 position-relative hide">
+              <i
+                class="bi bi-arrow-left fw-bold fs-3 text-white position-absolute"
+                style="top: 10px; left: 10px"
+                id="back-chat"
+              ></i>
+              <i
+                class="bi bi-list fw-bold fs-3 text-white position-absolute"
+                id="menu-profile"
+                style="top: 10px; right: 10px"
+              ></i>
+              <img
+                src="/img/notif_img.jpg"
+                alt="profile"
+                class="profile-section__img img-fluid mt-2"
+                id="profile-image"
+              />
+              <div class="text-center fs-3 fw-bold">
+                User <span class="text-danger hide blocked">Blocked</span>
+              </div>
+              <p class="mt-0 online-time">last seen 8:12 AM</p>
+              <div class="row profile-section__data g-2">
+                <div class="col-12">
+                  <div class="text-start fw-bold">Bio:</div>
+                  <p class="text-start bio">
+                    Menimcha qilib bolmaydigan ishni o'zi yo'q.
+                  </p>
+                  <div class="birthdate d-flex mt-0">
+                    <div class="text-start fw-bold">Birth info:</div>
+                    <div class="birth-date mx-1">
+                      <span class="day">26</span>.<span class="month">04</span
+                      >.<span class="year">2005</span>
+                    </div>
+                  </div>
+                  <div class="place">
+                    Motherland:
+                    <span class="birth-place fw-bold">Amudaryo</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <button class="follow w-100" id="get-follow">Follow</button>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-light w-100" id="like-btn">
+                    Like ❤️
+                  </button>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-dark w-100" id="get-message">
+                    Message
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- /Pfofile case -->
+          </div>
+          <!-- /Chat Side -->
+          <!-- Notification Side  -->
+          <div class="col-3">
+            <!-- hidden -->
+            <h5 class="text-primary">Notifications:</h5>
+            <div class="friend__notification d-flex flex-column">
+              <div>
+                <img
+                  src="/img/notif_img.jpg"
+                  alt="name not defined!"
+                  class="profile__img_notif"
+                />
+                <p class="text-primary">
+                  Samar Badriddinov liked your image. ❤️
+                </p>
+              </div>
+              <div>
+                <img
+                  src="/img/profile 3.jpg"
+                  alt="name not defined!"
+                  class="profile__img_notif"
+                />
+                <p class="text-primary">
+                  jallolidin_sadullayev liked your image. ❤️
+                </p>
+              </div>
+              <div>
+                <img
+                  src="/img/profile 4.png"
+                  alt="name not defined!"
+                  class="profile__img_notif"
+                />
+                <p class="text-primary">
+                  Bobur Kenjaboyev liked your image. ❤️
+                </p>
+              </div>
+              <div>
+                <img
+                  src="/img/profile 4.png"
+                  alt="name not defined!"
+                  class="profile__img_notif"
+                />
+                <p class="text-primary">
+                  akhmedov.provides liked your image. ❤️
+                </p>
+              </div>
+              <div>
+                <img
+                  src="/img/notif_img.jpg"
+                  alt="name not defined!"
+                  class="profile__img_notif"
+                />
+                <p class="text-primary">
+                  Samandar Kamolov liked your image. ❤️
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /Notifiction Side -->
+        </div>
+      </div>
+    </section>
+    <div
+      class="profile__overlay"
+      style="width: 100%; height: 100%; background-color: aqua"
+    >
+      <div class="profile__overlay-modal"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/chats.js"></script>
+    <script src="/js/profile-case.js"></script>
+    <script src="/js/my-profile.js"></script>
+    <!-- <script src="/js/calling.js"></script> -->
+    <!--Bir kuni qoshaman buni ham calling.js ni-->
+  </body>
+</html>

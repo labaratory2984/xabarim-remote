@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Xabarim Messenger</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="/img/logo-main.jpg" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__box">
+          <div class="d-flex">
+            <img
+              src="/img/xabarim-logo-shakl-only.svg"
+              alt="logo"
+              class="logo"
+            />
+            <h2 class="logo__title">Xabarim</h2>
+          </div>
+          <div class="links">
+            <a href="#main" class="mx-3 links__item blue-text">Main</a>
+            <a href="#design" class="mx-3 links__item">Design</a>
+            <a href="#about" class="mx-3 links__item">About</a>
+            <!-- about-us ni ishlat modal uchun -->
+            <a href="#socials" class="mx-3 links__item">Socials</a>
+            <a href="/pages/login.html" target="_blank" class="mx-3 links__item"
+              >Login</a
+            >
+            <a class="mx-3 links__item" id="about-us">Info</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main section -->
+    <div class="container main__section">
+      <section id="main">
+        <div class="overlay hide"></div>
+        <div class="row modal-about hide">
+          <div class="col-2">
+            <i class="bi bi-x-circle close-btn position-absolute"></i>
+          </div>
+          <div class="col-12 p-2 text-white">
+            <span class="text-success fw-bold fs-4"> About App:</span>
+            <br />
+            <span class="text-primary fw-bold">Xabarim</span> — bu
+            foydalanuvchilar o‘rtasida xabar almashish imkonini beruvchi onlayn
+            messenjer Loyiha 2025-yilda
+            <a
+              href="https://vizitka-blond.vercel.app/"
+              target="_blank"
+              class="text-decoration-none"
+              >Nurbek Ahmedov</a
+            >
+            tomonidan ishlab chiqilgan bo'lib, asosiy funksiyalar sifatida
+            matnli yozishmalar, qo‘ng‘iroqlar va fayl yuborish imkoniyatlarini
+            o‘z ichiga oladi.
+          </div>
+          <div class="col-12 p-2 text-white">
+            <p class="text-success fw-bold fs-4">
+              Version: <span class="text-white">1.0</span>
+            </p>
+          </div>
+          <div class="col-12 p-2 text-white">
+            <p class="text-success fw-bold fs-4">
+              Technologies:
+              <span class="text-white"> HTML,CSS, Bootstrap, JavaScript</span>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <h1>
+              <span class="text-white"> Xabarim</span> <br />
+              is national social network in Uzbekistan.
+            </h1>
+            <p class="fw-bold text-dark fs-5">
+              We store any messages and content you share with your friends on
+              our Uzbek server.This is what makes us different from Telegram.
+            </p>
+            <a href="/pages/registration.html" class="registration-button"
+              >registration</a
+            >
+          </div>
+          <div class="col-5 frame-wrapper">
+            <div class="content"></div>
+            <img src="/img/iphone-frame.png" alt="ss" class="iphone-frame" />
+            <div class="text-container mt-4">
+              <div class="app-description">
+                <h2>
+                  On smartphone <br />
+                  this app looks like modern <br />
+                  and flexible
+                </h2>
+                <p class="mt-5 fw-bolder text-white">
+                  It is a modern messenger app that allows users to exchange
+                  messages quickly and securely. Our goal is to simplify
+                  communication and provide a convenient experience for every
+                  user.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Features -->
+    <div class="container">
+      <section id="design">
+        <div class="row gy-3 features">
+          <div class="col-12">
+            <h3 class="text-center fw-bold fs-1">Design & Features</h3>
+            <p class="text-center fw-bold">We built a lot of functions</p>
+          </div>
+          <!-- messaging -->
+          <div
+            class="col-6 d-flex justify-content-center align-items-center flex-column text-white"
+          >
+            <div class="features__card">
+              <img
+                src="/img/messaging.png"
+                alt="Your pc is broken."
+                class="img-fluid"
+              />
+              <div class="card__text">
+                <h4>Messaging</h4>
+                <p>
+                  You can message with your buddy, sweatheaert and others on
+                  Xabarim. It looks like national Messenger era, mmm.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- calling -->
+          <div
+            class="col-6 d-flex justify-content-center align-items-center flex-column text-white"
+          >
+            <div class="features__card">
+              <img
+                src="/img/calling.png"
+                alt="Your pc is broken."
+                class="img-fluid"
+              />
+              <div class="card__text">
+                <h4>Calling</h4>
+                <p>
+                  You can call with your buddy, sweatheaert and others on
+                  Xabarim. Just call someone with any causes, dude.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- verification display -->
+          <div
+            class="col-6 d-flex justify-content-center align-items-center flex-column text-white"
+          >
+            <div class="features__card">
+              <img
+                src="/img/verification.png"
+                alt="Your pc is broken."
+                class="img-fluid"
+              />
+              <div class="card__text">
+                <h4>Verification</h4>
+                <p>
+                  We worry about your security so we set up verification. If you
+                  want more security, you can use two-step password.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- server side -->
+          <div
+            class="col-6 d-flex justify-content-center align-items-center flex-column text-white"
+          >
+            <div class="features__card">
+              <img
+                src="/img/server.png"
+                alt="Your pc is broken."
+                class="img-fluid"
+              />
+              <div class="card__text">
+                <h4>Server side</h4>
+                <p>
+                  We save every event on our data base. You can watch server
+                  analytics and statistics in this page.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- About us -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-white">
+          <div class="col-12">
+            <div class="overlay-middle hide"></div>
+          </div>
+          <div class="col-12">
+            <div class="feedback-box hide">
+              <div
+                class="d-flex justify-content-between align-items-center mb-0 title-box"
+              >
+                <h6 class="text-dark p-1 fs-2">Comments</h6>
+                <i class="bi bi-x-circle close-btn p-1"></i>
+              </div>
+              <form
+                class="d-flex flex-column justify-content-center align-items-center mt-0"
+              >
+                <h6 class="text-center p-3">
+                  Also you can send your opinion to us here. <br />
+                  Please, don't use
+                  <span class="text-danger">slang</span> words.
+                </h6>
+                <label for="textarea"> Send feedback: </label>
+                <textarea
+                  name="feedback-text"
+                  id="textarea"
+                  rows="5"
+                  cols="30"
+                  class="w-100 bg bg-dark border-primary"
+                  placeholder="Write here"
+                  autofocus
+                ></textarea>
+                <button class="send-feedback">
+                  <span class="loader hide"></span>
+                  <img
+                    src="/img/successfuly sent.svg"
+                    alt="Sent icon"
+                    class="sent-icon hide"
+                  />
+                  <span class="btn-text">Send</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-12">
+            <h3 class="text-center fw-bold fs-1">About app</h3>
+            <p class="text-center fw-bold">
+              Platform is powered by only one programmer. You'll know about
+              author in this part.
+            </p>
+          </div>
+          <div class="col-4 about__app-left">
+            <img
+              src="/img/profile 4.png"
+              alt="author"
+              class="img-fluid profile_img"
+            />
+            <h5 class="fw-bold">Nurbek Ahmedov</h5>
+            <h6>
+              CEO and founder of <span class="text-primary">Xabarim</span>
+            </h6>
+          </div>
+          <div class="col-8 about__app-right">
+            <div>
+              <h5 class="fw-bold">Full Info:</h5>
+              <p class="about__app-text">
+                Xabarim is created by Nurbek in 2025, 6-september, although this
+                project is published to internet-server in 2025, 1-november.
+                Because it's too hard for only one programmer. Our programmer
+                developed "backend + frontend" of Xabarim. Maybe on this site
+                have some issues. If issues are available, you can send feedback
+                to us.
+              </p>
+              <div class="d-flex justify-content-start align-items-center w-25">
+                <div class="icon-box">
+                  <i class="bi bi-heart" id="like"></i>
+                  <i class="bi bi-heart-fill hide" id="liked"></i>
+                </div>
+                <div class="icon-box">
+                  <i class="bi bi-chat" id="feedback"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Social networks -->
+    <section class="mt-5" id="socials">
+      <div class="container">
+        <div class="row g-2 d-flex justify-content-between">
+          <div class="col-12">
+            <h3 class="text-center fw-bold fs-1">We are in Social networks</h3>
+            <p class="text-center mb-5">
+              We perfect other social networks so we joined all of them.
+            </p>
+          </div>
+          <div
+            class="col-3 d-flex justify-content-center flex-column align-items-center border border-primary rounded p-2 bg bg-dark text-white"
+          >
+            <img
+              src="/img/insta logo.jpg"
+              class="social-img"
+              alt="Instagram"
+              id="instagram-logo"
+            />
+            <h5>Instagram</h5>
+            <p class="text-center">
+              We share reels on Instagram for Xabarim users. We apreciate it. So
+              follow us and view new stories of Xabarim on Instagram every day.
+            </p>
+            <a
+              href="https://www.instagram.com/akhmedov.provides/"
+              target="_blank"
+              id="instagram-btn"
+              >View</a
+            >
+          </div>
+          <div
+            class="col-3 d-flex justify-content-center flex-column align-items-center border border-primary rounded p-2 bg bg-dark text-white"
+          >
+            <img
+              src="/img/telegram logo.png"
+              class="social-img"
+              alt="Telegram"
+            />
+            <h5>Telegram</h5>
+            <p class="text-center">
+              We share news for you on Telegram chanell. Becuase, right now all
+              of people don't know about Xabarim Messenger.
+            </p>
+            <a href="https://t.me/N_2984" target="_blank" id="telegram-btn"
+              >View</a
+            >
+          </div>
+          <div
+            class="col-3 d-flex justify-content-center flex-column align-items-center border border-primary rounded p-2 bg bg-dark text-white"
+          >
+            <img src="/img/youtube logo.png" class="social-img" alt="YouTube" />
+            <h5>YouTube</h5>
+            <p class="text-center">
+              YouTube is perfect for share Vlogs to you. So we have speacial
+              chanell on YouTube for you. Really these vlogs are so funny, dude.
+            </p>
+            <a
+              href="https://www.youtube.com/@akhmedov.provides"
+              target="_blank"
+              id="youtube-btn"
+              >View</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Social networks -->
+    <!-- Footer -->
+    <footer class="bg bg-dark text-white w-100 mt-5">
+      <div class="container-fluid p-0">
+        <div class="row w-100 d-flex justify-content-around g-1">
+          <div
+            class="col-12 d-flex justify-content-center align-items-center flex-column"
+          >
+            <h6 class="text-center fw-bold fs-1 mt-4">
+              Thanks for view our site.
+            </h6>
+            <p class="text-center mt-2">
+              We apreciate your attention so we will try to improve our Xabarim
+              App.
+            </p>
+          </div>
+          <div
+            class="col-5 d-flex justify-content-center align-items-center flex-column blue rounded p-3 mb-3"
+          >
+            <div class="text-primary">Legal informations:</div>
+            <p>
+              We respect our product and you, so we have some copyright
+              licenses. Using the site name elsewhere is strictly prohibited.
+            </p>
+            <div class="text-primary">Contact informations:</div>
+            <p>
+              You can contact with me on different type of connections. So if
+              you want do it, click buttons.
+            </p>
+            <div class="d-flex w-100 justify-content-center" style="gap: 10px">
+              <a href="tel:+998999461551" class="btn btn-secondary text-dark"
+                >+998 99 946 15 51</a
+              >
+              <a
+                href="mailto:ahmedovnurbek26042005@gmail.com"
+                class="btn btn-secondary text-dark"
+                >Emaildan yozish</a
+              >
+            </div>
+            <div class="text-primary">Subscription:</div>
+            <p>
+              In addition we have free Subscription. If you subscribe Xabarim,
+              we send news and new features of Xabarim with Gmail to you.
+            </p>
+            <div class="footer-email d-flex align-items-center flex-column">
+              <div class="text-primary">Email:</div>
+              <div class="w-100 d-flex mt-2">
+                <input
+                  type="email"
+                  class="form-control footer-input mx-1"
+                  placeholder="insert your email"
+                  id="footer-email"
+                />
+                <button
+                  class="btn btn-primary"
+                  id="subscribe-button"
+                  type="button"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-5 d-flex justify-content-center flex-column align-items-center p-0 position-relative"
+          >
+            <div class="footer-nav">
+              <a href="#main">Main</a>
+              <a href="#design">Design</a>
+              <a href="#about">About</a>
+              <a href="#socials">Socials</a>
+              <a href="/pages/login.html" target="_blank">Login</a>
+            </div>
+            <div class="logo-footer">
+              <!-- Here is my logo case. -->
+              <img
+                src="/img/xabarim-logo-shakl-only.svg"
+                alt="logo"
+                class="logo"
+                id="footer-logo"
+              />
+              <h2 class="logo__title" id="footer-logo__title">Xabarim</h2>
+            </div>
+            <div
+              class="d-flex justify-content-center flex-column align-items-center"
+            >
+              <h6 class="text-center">We are in social networks:</h6>
+              <div class="social-networks">
+                <a
+                  href="https://www.instagram.com/akhmedov.provides/"
+                  target="_blank"
+                  ><i class="bi bi-instagram" id="footer-instagram"></i
+                ></a>
+                <a href="https://t.me/N_2984" target="_blank"
+                  ><i class="bi bi-telegram" id="footer-telegram"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/@akhmedov.provides"
+                  target="_blank"
+                  ><i class="bi bi-youtube" id="footer-youtube"></i
+                ></a>
+              </div>
+              <h6 class="text-center mt-2">
+                Powered by
+                <a
+                  href="https://vizitka-blond.vercel.app/"
+                  target="_blank"
+                  class="text-decoration-none"
+                  >Ahmedov Nurbek</a
+                >. All rights reserved. 2025 &copy;
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

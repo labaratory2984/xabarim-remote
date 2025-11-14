@@ -1,0 +1,125 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.friend__notification div {
+  display: flex;
+}
+/* header */
+header {
+  width: 100%;
+  background-color: rgb(244, 244, 255);
+}
+.nav__box {
+  padding: 5px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.logo__title {
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  -webkit-background-clip: text; /* Safari, Chrome */
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Firefox */
+  color: transparent;
+}
+.links a {
+  color: rgb(21, 123, 212);
+  text-decoration: none;
+}
+.button-right {
+  width: 200px;
+  height: 30px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(24, 119, 242);
+  border: 2px solid rgb(24, 119, 242);
+  border-radius: 5px;
+  color: aliceblue;
+}
+.contact__case {
+  background-color: rgb(171, 200, 252);
+  border: 2px solid rgb(171, 200, 252);
+  width: 200px;
+  padding: 0;
+  border-top: none;
+}
+.contacts {
+  border: 2px solid rgb(171, 200, 252);
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  width: 100%;
+  height: 307px;
+  overflow-y: scroll;
+  background-color: rgb(171, 200, 252);
+}
+/* Scroll bar umumiy */
+.contacts::-webkit-scrollbar,
+.messages::-webkit-scrollbar {
+  width: 8px; /* kengligi */
+}
+
+/* Scrollning fon qismi */
+.contacts::-webkit-scrollbar-track,
+.messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Scrollning tugmasi (thumb) */
+.contacts::-webkit-scrollbar-thumb,
+.messages::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff00cc, #3333ff);
+  border-radius: 10px;
+}
+
+/* Hover bo‘lganda */
+.contacts::-webkit-scrollbar-thumb:hover,
+.messages::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff6600, #ff0066);
+}
+.person-profile {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  background-color: rgb(171, 200, 252);
+}
+.profile__img {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgb(71, 205, 71);
+  border-radius: 50%;
+}
+/* Message Box */
+.message__box {
+  background-color: rgb(183, 197, 236);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px !important;
+  margin-left: 5px;
+}
+.friend__notification {
+  display: flex;
+  gap: 2px;
+}
+.friend__notification img,
+p {
+  margin: 1px;
+}
+.friend__notification p {
+  line-height: 16px;
+}
+.profile__img_notif {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(7, 0, 207);
+  border-radius: 50%;
+}
+/* extra tools */
